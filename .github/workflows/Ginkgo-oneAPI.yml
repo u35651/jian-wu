@@ -1,0 +1,19 @@
+name: CI ginkgo
+
+on: [push]
+
+jobs:ginkgo security of food
+
+
+  build: /opt/intel/inteloneapi/setvars.sh
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo Hello, world!
+    - name: Run a multi-line script
+      run: |make all && make run
+        echo Add other actions to build,
+        echo test, and deploy your project.
